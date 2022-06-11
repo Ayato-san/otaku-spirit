@@ -1,0 +1,21 @@
+{
+    "name": "otaku-spirit",
+    "version": "1.0.0",
+    "description": "A discord bot for all",
+    "main": "index.js",
+    "scripts": {
+        "launch": "node ."
+    },
+    "keywords": [
+        "discord",
+        "bot",
+        "discordbot"
+    ],
+    "author": "Ayato-san",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "13.6.0",
+        "dotenv": "16.0.0",
+        "glob": "7.2.0"
+    }
+}
