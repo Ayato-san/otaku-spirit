@@ -4,7 +4,9 @@ This bot is created for the discord server [Otaku Army](https://discord.gg/KJ3Wh
 
 ### Libs used
 > discord.js : 13.6.0
+
 > dotenv : 16.0.0
+
 > glob : 7.2.0
 
 ### Tree structure
@@ -15,7 +17,8 @@ This bot is created for the discord server [Otaku Army](https://discord.gg/KJ3Wh
 |   ↳ utils
 |
 |→ events : all events
-|   ↳ client
+|   ↳ client : default intents
+|   ↳ guild_messages : intents for messages
 |
 ↳ utils : all utilities
    ↳ handlers
@@ -23,5 +26,7 @@ This bot is created for the discord server [Otaku Army](https://discord.gg/KJ3Wh
 
 ### Links
 [Discord docs](https://discord.js.org/#/docs) 
-[Developer portal](https://discord.com/developers/applications) 
+
+[Developer portal](https://discord.com/developers/applications)
+
 [Intents Calculator](https://discord-intents-calculator.vercel.app/)
