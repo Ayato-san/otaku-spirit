@@ -9,6 +9,8 @@ This bot is created for the discord server [Otaku Army](https://discord.gg/KJ3Wh
 
 > glob : 7.2.0
 
+> mongoose : 6.2.3
+
 ### Tree structure
 
 ```
@@ -25,8 +27,10 @@ This bot is created for the discord server [Otaku Army](https://discord.gg/KJ3Wh
 ```
 
 ### Links
-[Discord docs](https://discord.js.org/#/docs) 
+[Discord docs](https://discord.js.org/#/docs/discord.js/13.6.0/general/welcome) 
 
 [Developer portal](https://discord.com/developers/applications)
 
 [Intents Calculator](https://discord-intents-calculator.vercel.app/)
+
+[Mongo DB](https://cloud.mongodb.com/)

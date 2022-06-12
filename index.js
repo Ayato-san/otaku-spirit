@@ -1,4 +1,5 @@
 const { Client, Collection } = require('discord.js')
+const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 dotenv.config()
 
@@ -23,5 +24,20 @@ process.on('unhandledRejection', (reason, promise) => {
 process.on('warning', (...args) => {
     console.log(...args)
 })
+
+mongoose
+    .connect(process.env.DATABASE_URI, {
+        autoIndex: false,
+        maxPoolSize: 10,
+        serverSelectionTimeoutMS: 5000,
+        socketTimeoutMS: 45000,
+        family: 4
+    })
+    .then(() => {
+        console.log('\nMongoose est connecter')
+    })
+    .catch(err => {
+        console.error(err)
+    })
 
 client.login(process.env.DISCORD_TOKEN)

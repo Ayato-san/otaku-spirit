@@ -1,11 +1,11 @@
 const { MessageEmbed } = require('discord.js')
 
-const TITLE = '🏓  Pong!'
+const TITLE = '🤖  Bot Infos'
 const COLOR = '#2196f3'
 
 module.exports = {
-    name: 'ping',
-    description: 'Calcul and send the ping of the bot',
+    name: 'botinfo',
+    description: 'Send bots infos',
     run: (client, message, args) => {
         const embed = new MessageEmbed()
             .setTitle(TITLE)
@@ -18,12 +18,8 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: 'Ping',
-                    value: `\`${
-                        Date.now() -
-                        message.createdTimestamp -
-                        2 * Math.floor(client.ws.ping)
-                    }ms\``,
+                    name: 'Uptime',
+                    value: `<t:${parseInt(client.readyTimestamp / 1000)}:R>`,
                     inline: true
                 }
             )
@@ -47,12 +43,8 @@ module.exports = {
                     inline: true
                 },
                 {
-                    name: 'Ping',
-                    value: `\`${
-                        Date.now() -
-                        interaction.createdTimestamp -
-                        2 * Math.floor(client.ws.ping)
-                    }ms\``,
+                    name: 'Uptime',
+                    value: `<t:${parseInt(client.readyTimestamp / 1000)}:R>`,
                     inline: true
                 }
             )
